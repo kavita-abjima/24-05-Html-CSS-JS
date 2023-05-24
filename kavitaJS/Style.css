@@ -1,0 +1,12 @@
+
+    body{
+        background-color: aqua;
+    }
+    main{background-color: #000;
+        color: hsl(0, 15%, 91%);
+        width: 50%;
+    }
+    h1{
+        background-color:white;
+        width: 50%;
+    }

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* element selection */
+    /* img{
+        border: 2px solid red;
+    } */
+    /* class selection */
+    .tutorial{
+        border: 2px solid gray;
+    }
+    #tutorial-1{
+        background-color: gray;
+    }
+
+    /* Attribute selector */
+
+    img[src="https://th.bing.com/th?q=Black+150X150&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247"]{
+        border: 3px solid blue;
+    }
+
+    /* Selector List */
+    h1,h2{
+        color: brown;
+    }
+    /* Class selector with text selector */
+
+    .tutorial,h1{
+      border: 2px solid red;
+    }
+
+    /* combinator */
+    .tutorial > p {
+        font-size: 2em;
+    }
+
+    /* .column{
+        width: 100%;
+        border: 2px solid black;
+    }
+    .column>div{
+        width: 49%;
+        border: 1px solid black;
+        float: left;
+        padding: 2px;
+    } */
+    .column{
+        border: 1px solid blue;
+        display: flex;
+    }
+    .column>div{
+        border: solid 2px #ccc;
+        flex: 1;
+    }
+    /* adding psudo class */
+    .column>div:nth-of-type(2){
+        flex: 2;
+    }
+
+    /* Responsive layout */
+    /* .desktop,.print{
+        display: none;
+    } */
+   @media print{
+    .mobile,.desktop{
+        display: none;
+    }
+    .print{
+        display: block;
+    }
+   }
+   @media screen and (min-width-768px){
+    .mobile{display: none;}
+
+    .desktop{display: block;}
+   }
+    
+</style>
+<!-- <link rel="stylesheet" href="Style.css"> -->
+<!-- <style>
+    body{
+        background-color: aqua;
+    }
+    main{background-color: #000;
+        color: hsl(0, 15%, 91%);
+        width: 50%;
+    }
+    h1{
+        background-color:white;
+        width: 50%;
+    }
+</style> -->
+<body>
+    <!-- <main>
+    <h1 style="color:red;">Html Element</h1>
+    <p>Each Element have purpose</p>
+    <a href="https://www.w3schools.com/js/default.asp">Learn more at w3 school</a>
+    <table>
+    </main>
+        <thead>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>XYZ</td>
+                <td>ABC</td>
+            </tr>
+            <td>MNC</td>
+            <td>SLQ</td>
+
+        </tbody>
+    </table> -->
+    
+        <h1>Introduction to CSS</h1>
+        <p>These tutorials teach you CSS</p>
+        <div id="tutorial-1" class="tutorial">
+            <h2>Tutorial 1</h2>
+            <img src="https://th.bing.com/th?q=Black+150X150&w=120&h=120&c=1&rs=1&qlt=90&cb=1&dpr=1.3&pid=InlineBlock&mkt=en-IN&cc=IN&setlang=en&adlt=moderate&t=1&mw=247" alt="">
+            <p>To begin with toturial 1......</p>
+            
+        </div>   
+        <div  id="tutorial-2" class="tutorial">
+            <h2>Tutorial 2</h2>
+            <img src="https://th.bing.com/th/id/OIP.ER6T17JQxk1BkCxjB2c8-AHaHY?w=176&h=180&c=7&r=0&o=5&dpr=1.3&pid=1.7" alt="">
+            <p>To begin with toturial 2......</p>
+            
+       </div>
+
+       <div class="column">
+        <div>Column-1</div>
+        <div>Column-2</div>
+        <div>Column-3</div>
+       </div>
+       <div class="desktop">Desktop</div>
+       <div class="mobile">Mobile</div>
+       <div class="print">Print</div>
+       
+</body>
+
+</html>
